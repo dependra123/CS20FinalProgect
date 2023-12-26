@@ -1,9 +1,5 @@
-bits 16
+jmp $
 
-
-.global _start
-
-
-_start:
-    jmp boot
+times 511-($-$$) db 0
+db 0x55, 0xaa
 
